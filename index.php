@@ -6,8 +6,11 @@
 	<!-- My Style CSS -->
 	<link rel="stylesheet" type="text/css" href="assets/style.css">
 	<!-- Font Awesome 5 -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" integrity="sha256-qM7QTJSlvtPSxVRjVWNM2OfTAz/3k5ovHOKmKXuYMO4=" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"/>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js"></script>
+	<!-- Slick -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"/>
 </head>
 <body>
 	<div id="header-sosmed">
@@ -60,12 +63,50 @@
 			</div>
 		</div>
 	</div>
-	<div id="header-title">
-		<div class="container flex-row-center" style="text-align: center;height: 100%;">
-			<div style="width: 800px">
-				<h1>MADE FOR DESIGNERS</h1>
-				<h3>Create your online portofolio in munites with the professionally and lovingly designed REEN website template. Customize your site with versalite and easy to use features.</h3>
-				<a class="btn-1 btn-hover" href="#">GET STARTED NOW</a>
+	<div class="header-slider">
+		<div class="header-title">
+			<div class="header-slick-1 flex-row-center" style="text-align: center;height: 100%;">
+				<div><div class="container">
+					<h1>MADE FOR DESIGNERS</h1>
+					<h3>Create your online portofolio in munites with the professionally and lovingly designed REEN website template. Customize your site with versalite and easy to use features.</h3>
+					<a class="btn-1 btn-hover" href="#">GET STARTED NOW</a>
+				</div></div>
+			</div>
+		</div>
+		<div class="header-title">
+			<div class="header-slick-2 flex-row-center" style="text-align: center;height: 100%;">
+				<div><div class="container">
+					<h1>MADE FOR DESIGNERS</h1>
+					<h3>Create your online portofolio in munites with the professionally and lovingly designed REEN website template. Customize your site with versalite and easy to use features.</h3>
+					<a class="btn-1 btn-hover" href="#">GET STARTED NOW</a>
+				</div></div>
+			</div>
+		</div>
+		<div class="header-title">
+			<div class="header-slick-3 flex-row-center" style="text-align: center;height: 100%;">
+				<div><div class="container">
+					<h1>MADE FOR DESIGNERS</h1>
+					<h3>Create your online portofolio in munites with the professionally and lovingly designed REEN website template. Customize your site with versalite and easy to use features.</h3>
+					<a class="btn-1 btn-hover" href="#">GET STARTED NOW</a>
+				</div></div>
+			</div>
+		</div>
+		<div class="header-title">
+			<div class="header-slick-4 flex-row-center" style="text-align: center;height: 100%;">
+				<div><div class="container">
+					<h1>MADE FOR DESIGNERS</h1>
+					<h3>Create your online portofolio in munites with the professionally and lovingly designed REEN website template. Customize your site with versalite and easy to use features.</h3>
+					<a class="btn-1 btn-hover" href="#">GET STARTED NOW</a>
+				</div></div>
+			</div>
+		</div>
+		<div class="header-title">
+			<div class="header-slick-5 flex-row-center" style="text-align: center;height: 100%;">
+				<div><div class="container">
+					<h1>MADE FOR DESIGNERS</h1>
+					<h3>Create your online portofolio in munites with the professionally and lovingly designed REEN website template. Customize your site with versalite and easy to use features.</h3>
+					<a class="btn-1 btn-hover" href="#">GET STARTED NOW</a>
+				</div></div>
 			</div>
 		</div>
 	</div>
@@ -218,20 +259,25 @@
 			</div>
 		</div>
 	</div>	
-	<script type="text/javascript" src="assets/script.js">
-		// $(document).ready(function() {
-		// 	$('.carousel').carousel();
-		// 	$(window).scroll(function() {
-		// 		var navbar = $('.nava').offset().top;
-		// 		var scroll = $(window).scrollTop();
-		// 		if (scroll > 100) {
-		// 			$('.nava').addClass('sticky-header').removeClass('nava-abs').removeClass('py-4');
-		// 		}
-		// 		else {
-		// 			$('.nava').removeClass('sticky-header').addClass('nava-abs').addClass('py-4');	
-		// 		}
-		// 	});
-		// });
+
+
+	<!-- Slick Script -->
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+	<!-- <script type="text/javascript" src="slick/slick.min.js"></script> -->
+					
+	<!-- My Script -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('.header-slider').slick({
+				autoplay: true,
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				autoplay: true,
+				autoplaySpeed: 1000,
+			});
+		});
 	</script>
 </body>
 </html>

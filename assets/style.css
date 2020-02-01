@@ -48,7 +48,7 @@ table {
     box-sizing: border-box;
 }
 div, span {
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     box-sizing: border-box;
 }
 a {
@@ -179,26 +179,47 @@ a {
     position: relative;
     z-index: 2;
 }
-#header-title {
+.header-slider {
+    width: 100%;
+    overflow: hidden;
+}
+.header-title {
     height: 700px;
-    background: url(images/slider1.jpg);
     background-size: cover;
-    background-position: center;
     position: relative;
     z-index: 1;
 }
-#header-title h1 {
+.header-title h1 {
     font-size: 5em;
     font-weight: bolder;
     color: #fff;
 }
-#header-title h3 {
+.header-title h3 {
     font-size: 1.4em;
     color: rgba(255, 255, 255, 0.5);
     margin-top: 20px;
     margin-bottom: 60px;
     letter-spacing: -0.5px;
     line-height: 25px;
+}
+[class*='header-slick'] {
+    background-size: cover;
+    background-position: center!important;
+}
+.header-slick-1 {
+    background: url(images/slider1.jpg);
+}
+.header-slick-2 {
+    background: url(images/slider2.jpg);
+}
+.header-slick-3 {
+    background: url(images/slider3.jpg);
+}
+.header-slick-4 {
+    background: url(images/slider4.jpg);
+}
+.header-slick-5 {
+    background: url(images/slider5.jpg);
 }
 .btn-1 {
     background: #00bc9c;
