@@ -17,10 +17,10 @@
 		<div class="flex-between color-blue container">
 			<div class="flex-row-center fa-xs" style="font-weight: bold">
 				<div style="padding-right: 25px">
-					<a class="color-blue hover-c-green" href="#header-sosmed"><i class="far fa-envelope"></i>&nbsp&nbsp&nbsp info@reen.com</a>
+					<a class="color-blue hover-c-green" href="#header-sosmed"><i class="far fa-envelope"></i><span class="respon-none">&nbsp&nbsp&nbsp info@reen.com</span></a>
 				</div>
 				<div>
-					<a class="color-blue hover-c-green" href="#header-sosmed"><i class="fas fa-mobile-alt"></i>&nbsp&nbsp&nbsp +00 (123) 456 78 90</a>
+					<a class="color-blue hover-c-green" href="#header-sosmed"><i class="fas fa-mobile-alt"></i><span class="respon-none">&nbsp&nbsp&nbsp +00 (123) 456 78 90</span></a>
 				</div>
 			</div>
 			<div class="flex-row-center fa-xs">
@@ -34,11 +34,11 @@
 		</div>   
 	</div>
 	<div id="navbar">
-		<div class="menu-box container flex-row py-30">
+		<div class="menu-box container flex-row py-30 respon-padd-y">
 			<div>
-				<a href="#"><img class="hover-logo" src="assets/images/logo.png"></a>
+				<a href="#"><img class="hover-logo respon-logo" src="assets/images/logo.png"></a>
 			</div>
-			<div class="menu-link flex-row">
+			<div class="menu-link flex-row respon-none">
 				<div class="menu-hover mennu">
 					<p class="color-blue -bold a-full" href="#">HOME</p>
 					<ul class="menu-dropdown">
@@ -58,6 +58,7 @@
 			</div>
 			<div>
 				<div class="flex-row-center">
+					<a class="color-blue hover-c-green respon-block" href="#"><i class="fas fa-bars"></i></a><span class="respon-block">&nbsp&nbsp</span>
 					<a class="color-blue hover-c-green" href="#"><i class="fas fa-search"></i></a>					
 				</div>
 			</div>
@@ -112,9 +113,9 @@
 	</div>
 	<div id="main-1">
 		<div class="container color-blue" style="display: flex;justify-content: center;">
-			<div style="width: 720px;text-align: center;">
-				<h2 class="f-size-xlg-bold">Beautiful.Clean.Responsive.</h2>
-				<h3 class="f-size-md-bold" class="-bold" style="padding-top: 25px;color: #8496a8;">REEN is high-quality solution for those who want a beautiful website in no time.<br> It's fully responsive and will adapt itself to any mobile device. iPad, iPhone, Android, it does'nt matter. Your content will always looks its absolute best.</h3>
+			<div class="" style="width: 80%;text-align: center;">
+				<h2 class="f-size-xlg-bold">Beautiful.Clean.<span class="respon-block"><br></span>Responsive.</h2>
+				<h3 class="f-size-md-bold respon-none" class="-bold" style="padding-top: 25px;color: #8496a8;">REEN is high-quality solution for those who want a beautiful website in no time.<br> It's fully responsive and will adapt itself to any mobile device. iPad, iPhone, Android, it does'nt matter. Your content will always looks its absolute best.</h3>
 			</div>
 		</div>
 		<div class="container flex-around color-blue" style="padding-top: 50px;flex-flow: row wrap;">
@@ -139,7 +140,7 @@
 				<h1 class="f-size-xlg-bold color-blue pb-20">Check out our latest works</h1>
 				<h3 class="f-size-md-bold pb-20 cwt" style="color: #8496a8;">Magnis modipsae que voloratati andigen daepeditem quiate re porem aut labor.</h3>
 			</div>
-			<div class="flex-row flex-between pb-50">
+			<div class="flex-row- flex-between pb-50 respon-flex-center">
 				<div class="latest-card main-bg-hover" style="">
 					<div class="main-2-bg-1"><div class="hover-gallery">
 						<div class="hover-bg-plus flex"><i class="fas fa-plus f-size-md cwt"></i></div>
@@ -149,7 +150,7 @@
 						<h5 class="f-size-sm-bold" style="color: #8496a8;">Identity</h5>
 					</div>
 				</div>
-				<div class="latest-card main-bg-hover" style="">
+				<div class="latest-card main-bg-hover respon-marg-y" style="">
 					<div class="main-2-bg-2"><div class="hover-gallery">
 						<div class="hover-bg-plus flex"><i class="fas fa-plus f-size-md cwt"></i></div>
 					</div></div>
@@ -159,13 +160,41 @@
 					</div>
 				</div>
 			</div>
-			<div class="flex-row flex-between">
-				<div class="carousel-car-1"><div class="hover-gallery">
+			<div class="slicky-caro slicky-caro-mobile flex-row- flex-center">
+				<div class="carousel-car-1">
+					<div class="hover-gallery">
 					<div class="hover-bg-plus flex cwt"><div>
 						<h3 class="f-size-md-bold pb-10">Simple Nota</h3>
 						<p class="f-size-sm">Identity</p>
 					</div></div>
+					</div>
+				</div>
+				<div class="carousel-car-2"><div class="hover-gallery">
+					<div class="hover-bg-plus flex cwt"><div>
+						<h3 class="f-size-md-bold pb-10">Vinyl Record</h3>
+						<p class="f-size-sm">Identity</p>
+					</div></div>
 				</div></div>
+				<div class="carousel-car-3"><div class="hover-gallery">
+					<div class="hover-bg-plus flex cwt"><div>
+						<h3 class="f-size-md-bold pb-10">Astor & Yancy</h3>
+						<p class="f-size-sm">Identity</p>
+					</div></div>
+				</div></div>
+				<div class="carousel-car-4"><div class="hover-gallery">
+					<div class="hover-bg-plus flex cwt"><div>
+						<h3 class="f-size-md-bold pb-10">Signwall</h3>
+						<p class="f-size-sm">Identity</p>
+					</div></div>
+				</div></div>
+				<div class="carousel-car-1">
+					<div class="hover-gallery">
+					<div class="hover-bg-plus flex cwt"><div>
+						<h3 class="f-size-md-bold pb-10">Simple Nota</h3>
+						<p class="f-size-sm">Identity</p>
+					</div></div>
+					</div>
+				</div>
 				<div class="carousel-car-2"><div class="hover-gallery">
 					<div class="hover-bg-plus flex cwt"><div>
 						<h3 class="f-size-md-bold pb-10">Vinyl Record</h3>
@@ -197,11 +226,11 @@
 		</div>
 	</div>	
 	<div id="footer-1">
-		<div class="container flex-row flex-between" style="color: white;">
+		<div class="container flex-row- flex-around" style="color: white;">
 			<div class="footer-box-1">
 				<h2 class="f-size-md-bold mb-20">WHO WE ARE</h2>
 				<a href="http://localhost/web_design/css_responsive_ust_alfin/"><img class="grayscale hover-logo" src="assets/images/logo.png" style="width: 120px;"></a>
-				<p class="f-size-nm-bold mb-20 mt-20" style="color: #8496a8;line-height: 20px;letter-spacing: -0.6px;">Magnis modipsae que voloratati andigen daepeditem quiate re porem aut labor.<br>Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam.</p>
+				<p class="f-size-nm-bold mb-20 mt-20" style="color: #8496a8;line-height: 20px;letter-spacing: -0.6px;">Magnis modipsae que voloratati andigen daepeditem quiate re porem aut labor.<span class="respon-none"><br></span>Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam.</p>
 				<a class="f-size-nm-bold hover-c-green" href="#footer-1" style="color: #8496a8">More about us <i class="fa fa-arrow-right"></i></a>
 			</div>
 			<div class="footer-box-2">
@@ -241,9 +270,9 @@
 		</div>
 	</div>	
 	<div id="footer-2">
-		<div class="container flex-between"> 
-			<div style=""><p class="f-size-nm-bold cwt">2020 REEN. All rights reserved.</p></div>
-			<div class="flex-row-center">
+		<div class="container flex-around"> 
+			<div style="width: 100%;"><p class="f-size-nm-bold cwt respon-text-center">2020 REEN. All rights reserved.</p></div>
+			<div class="flex-row-center respon-none" style="width: 100%">
 				<a class="f-size-nm-bold cwt hover-c-green px-7" href="#footer-2"> Home </a>
 					<i class="fas fa-circle cwt" style="font-size: 0.2em;"></i>
 				<a class="f-size-nm-bold cwt hover-c-green px-7" href="#footer-2"> Portofolio </a>
@@ -274,8 +303,13 @@
 				autoplay: true,
 				slidesToShow: 1,
 				slidesToScroll: 1,
-				autoplay: true,
-				autoplaySpeed: 1000,
+				autoplaySpeed: 2000,
+			});
+			$('.slicky-caro').slick({
+			  infinite: true,
+			  slidesToShow: 4,
+			  slidesToScroll: 4,
+			  dots: true,
 			});
 		});
 	</script>
