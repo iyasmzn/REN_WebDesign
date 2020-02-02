@@ -12,7 +12,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"/>
 </head>
-<body>
+<body style="position: relative;">
 	<div id="header-sosmed">
 		<div class="flex-between color-blue container">
 			<div class="flex-row-center fa-xs" style="font-weight: bold">
@@ -33,7 +33,7 @@
 			</div>
 		</div>   
 	</div>
-	<div id="navbar">
+	<div class="navebar" id="navbar">
 		<div class="menu-box container flex-row py-30 respon-padd-y">
 			<div>
 				<a href="#"><img class="hover-logo respon-logo" src="assets/images/logo.png"></a>
@@ -57,10 +57,44 @@
 				<div><a class="menu-hover color-blue -bold hover-c-green" href="#">CONTACT</a></div>
 			</div>
 			<div>
-				<div class="flex-row-center">
-					<a class="color-blue hover-c-green respon-block" href="#"><i class="fas fa-bars"></i></a><span class="respon-block">&nbsp&nbsp</span>
-					<a class="color-blue hover-c-green" href="#"><i class="fas fa-search"></i></a>					
+				<div class="flex-row-center menu-bars">
+					<a class="color-blue hover-c-green respon-block menu-mobile" href="#"><i class="fas fa-bars"></i></a><span class="respon-block">&nbsp&nbsp</span>
+					<a class="color-blue hover-c-green search-meenuu" href="#"><i class="fas fa-search"></i></a>					
 				</div>
+			</div>
+		</div>
+	</div>
+	<div class="mobile-menu">
+		<a class="color-blue hover-c-green menu-mobile menu-times" href="#"><i class="fas fa-times"></i></a>
+		<div class="container">
+			<a href="#" class="hover-c-green">HOME</a>
+		</div>
+		<div class="container">
+			<a href="#" class="hover-c-green">PORTOFOLIO</a>
+		</div>
+		<div class="container">
+			<a href="#" class="hover-c-green">BLOG</a>
+		</div>
+		<div class="container">
+			<a href="#" class="hover-c-green">PAGES</a>
+		</div>
+		<div class="container">
+			<a href="#" class="hover-c-green">FEATURES</a>
+		</div>
+		<div class="container">
+			<a href="#" class="hover-c-green">MEGA MENU</a>
+		</div>
+		<div class="container">
+			<a href="#" class="hover-c-green">CONTACT</a>
+		</div>
+	</div>
+	<div class="mobile-search">
+		<div class="container menu-search-box">
+			<div style="width: 100%">
+				<input class="mobile-input" type="text" name="search">			
+			</div>
+			<div style="width: 15%;text-align: right;">
+				<a class="color-blue hover-c-green menu-search" href="#"><i class="fas fa-search"></i></a>				
 			</div>
 		</div>
 	</div>
@@ -272,7 +306,7 @@
 	<div id="footer-2">
 		<div class="container flex-around"> 
 			<div style="width: 100%;"><p class="f-size-nm-bold cwt respon-text-center">2020 REEN. All rights reserved.</p></div>
-			<div class="flex-row-center respon-none" style="width: 100%">
+			<div class="flex-row-center respon-none" style="width: 100%;justify-content: flex-end;">
 				<a class="f-size-nm-bold cwt hover-c-green px-7" href="#footer-2"> Home </a>
 					<i class="fas fa-circle cwt" style="font-size: 0.2em;"></i>
 				<a class="f-size-nm-bold cwt hover-c-green px-7" href="#footer-2"> Portofolio </a>
@@ -289,7 +323,8 @@
 		</div>
 	</div>	
 
-
+	<!-- JQuery -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<!-- Slick Script -->
 	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
@@ -299,6 +334,29 @@
 	<!-- My Script -->
 	<script type="text/javascript">
 		$(document).ready(function() {
+			$(window).scroll(function() {
+				var nav = $('.header-slider').offset().top;
+				var scroll = $(window).scrollTop();
+				if (scroll > nav) {
+					$('#navbar').addClass('sticky-navbar');
+					$('.menu-box').removeClass('py-30');
+				}
+				else {
+					$('#navbar').removeClass('sticky-navbar');
+				}
+			});
+			$('.menu-mobile').click(function() {
+				$('.mobile-menu').animate({width: "100%"}, 'fast');
+			});
+			$('.menu-times').click(function() {
+				$('.mobile-menu').animate({width: "0"}, 'slow');
+			});
+			$('.search-meenuu').click(function() {
+				$('.mobile-search').animate({width: "100%"}, 'fast');
+			});
+			$('.menu-search').click(function() {
+				$('.mobile-search').animate({width: "0"}, 'slow');
+			});
 			$('.header-slider').slick({
 				autoplay: true,
 				slidesToShow: 1,
