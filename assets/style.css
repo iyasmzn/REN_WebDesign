@@ -89,6 +89,7 @@ a {
 .w-50 { width: 70px;}
 .py-30 { padding: 30px 0px;}
 .py-20 { padding: 20px 0px;}
+.py-0 { padding: 0px;}
 .px-20 { padding: 0px 20px;}
 .px-7 { padding: 0px 7px;}
 .pr-20 { padding-right: 20px;}
@@ -157,6 +158,9 @@ a {
     height: 35px;
     border-bottom: 2px solid #eceef1;
 }
+.box-logo {
+    padding: 10px;
+}
 .mennu {
     position: relative;
     z-index: 20;
@@ -186,10 +190,6 @@ a {
     z-index: 2;
     background-color: white;
     transition: all 1s;
-}
-.sticky-navbar {
-    position: fixed!important;
-    top: 0;left: 0;right: 0;
 }
 .header-slider {
     width: 100%;
@@ -407,6 +407,13 @@ a {
     position: fixed;
     width: 100%;
     top: 0;
+}
+.sticky-logo {
+    width: 100px;
+}
+.sticky-navbar {
+    position: fixed!important;
+    top: 0;left: 0;right: 0;
 }
 
 

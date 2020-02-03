@@ -35,7 +35,7 @@
 	</div>
 	<div class="navebar" id="navbar">
 		<div class="menu-box container flex-row py-30 respon-padd-y">
-			<div>
+			<div class="box-logo">
 				<a href="#"><img class="hover-logo respon-logo" src="assets/images/logo.png"></a>
 			</div>
 			<div class="menu-link flex-row respon-none">
@@ -109,28 +109,28 @@
 			</div>
 		</div>
 		<div class="header-title">
-			<div class="header-slick-2 flex-row-center" style="text-align: center;height: 100%;">
-				<div><div class="container">
-					<h1>MADE FOR DESIGNERS</h1>
-					<h3>Create your online portofolio in munites with the professionally and lovingly designed REEN website template. Customize your site with versalite and easy to use features.</h3>
+			<div class="header-slick-2 flex-row-center" style="text-align: right;height: 100%;">
+				<div><div class="container" style="width: 100%;padding-right: 15px">
+					<h1>FRESH AND<br>BEAUTIFUL DESIGN</h1>
+					<h3>REEN is designed to showcase your talent and put your work in the forefont.<br>Professionally use of typhography and layout that fits your content</h3>
 					<a class="btn-1 btn-hover" href="#">GET STARTED NOW</a>
 				</div></div>
 			</div>
 		</div>
 		<div class="header-title">
-			<div class="header-slick-3 flex-row-center" style="text-align: center;height: 100%;">
-				<div><div class="container">
-					<h1>MADE FOR DESIGNERS</h1>
-					<h3>Create your online portofolio in munites with the professionally and lovingly designed REEN website template. Customize your site with versalite and easy to use features.</h3>
+			<div class="header-slick-3 flex-row-center" style="text-align: left;height: 100%;">
+				<div><div class="container" style="width: 100%;padding-left: 15px;">
+					<h1 style="background-color: #506a85;display: inline-block;padding: 5px;margin-bottom: 10px;">CLEEN AND</h1><br><h1 style="background-color: #506a85;display: inline-block;padding: 5px;">REUSABLE CODE</h1>
+					<h3 style="color: #506a85;">The clean code allows you to easily copy code blocks from content<br>modules and past them in different places or layouts.</h3>
 					<a class="btn-1 btn-hover" href="#">GET STARTED NOW</a>
 				</div></div>
 			</div>
 		</div>
 		<div class="header-title">
-			<div class="header-slick-4 flex-row-center" style="text-align: center;height: 100%;">
-				<div><div class="container">
-					<h1>MADE FOR DESIGNERS</h1>
-					<h3>Create your online portofolio in munites with the professionally and lovingly designed REEN website template. Customize your site with versalite and easy to use features.</h3>
+			<div class="header-slick-4 flex-row-center" style="text-align: right;height: 100%;">
+				<div><div class="container" style="width: 100%;padding-right: 15px;">
+					<h1 style="background-color: #506a85;display: inline-block;padding: 5px;margin-bottom: 10px;">JUST FOCUS ON</h1><br><h1 style="background-color: #506a85;display: inline-block;padding: 5px;">YOUR CREATIVITY</h1>
+					<h3>Take a break from messing around with heavy coding and spend your<br>time brainstroming ideas for your next project.</h3>
 					<a class="btn-1 btn-hover" href="#">GET STARTED NOW</a>
 				</div></div>
 			</div>
@@ -138,8 +138,8 @@
 		<div class="header-title">
 			<div class="header-slick-5 flex-row-center" style="text-align: center;height: 100%;">
 				<div><div class="container">
-					<h1>MADE FOR DESIGNERS</h1>
-					<h3>Create your online portofolio in munites with the professionally and lovingly designed REEN website template. Customize your site with versalite and easy to use features.</h3>
+					<h1>SHOWCASE<br>YOUR CONTENT</h1>
+					<h3>With REEN you have possibility to create websites for various contents quickly and easily. Now it's up to you!</h3>
 					<a class="btn-1 btn-hover" href="#">GET STARTED NOW</a>
 				</div></div>
 			</div>
@@ -339,10 +339,15 @@
 				var scroll = $(window).scrollTop();
 				if (scroll > nav) {
 					$('#navbar').addClass('sticky-navbar');
-					$('.menu-box').removeClass('py-30');
+					$('.menu-box').removeClass('py-30').addClass('py-7');
+					$('.hover-logo').addClass('sticky-logo');
+					$('.box-logo').css({padding: '10px'});
 				}
 				else {
 					$('#navbar').removeClass('sticky-navbar');
+					$('.menu-box').addClass('py-30').removeClass('py-7');
+					$('.box-logo').css({padding: '0px'});
+					$('.hover-logo').removeClass('sticky-logo');
 				}
 			});
 			$('.menu-mobile').click(function() {
